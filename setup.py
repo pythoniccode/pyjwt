@@ -77,7 +77,7 @@ setup(
     ),
     entry_points={
         'console_scripts': [
-            'jwt = jwt.__main__:main'
+            'jwt-cli = jwt.__main__:main'
         ]
     }
 )

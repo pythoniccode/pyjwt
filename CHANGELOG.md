@@ -4,6 +4,13 @@ Change Log
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+[Unreleased][unreleased]
+-------------------------------------------------------------------------
+### Changed
+- Renamed commandline script `jwt` to `jwt-cli` to avoid issues with the script clobbering the `jwt` module in some circumstances.
+
+### Fixed
+
 [v1.4][1.4.0]
 -------------------------------------------------------------------------
 ### Fixed

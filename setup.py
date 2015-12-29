@@ -29,11 +29,7 @@ if sys.argv[-1] == 'publish':
     print(' git push --tags')
     sys.exit()
 
-tests_require = [
-    'pytest==2.7.3',
-    'pytest-cov',
-    'pytest-runner',
-]
+tests_require = []
 
 needs_pytest = False #set(('pytest', 'test', 'ptr')).intersection(sys.argv)
 pytest_runner = ['pytest-runner'] if needs_pytest else []
@@ -69,11 +65,7 @@ setup(
     extras_require=dict(
         test=tests_require,
         crypto=['cryptography'],
-        flake8=[
-            'flake8',
-            'flake8-import-order',
-            'pep8-naming'
-        ]
+        flake8=[]
     ),
     entry_points={
         'console_scripts': [
